@@ -24,13 +24,23 @@ const obj = {
     вася: "300",
     петя: "400"
 };
-for(let sollary in obj){
-    console.log('${sollary}-зарплата ${obj[sollary]} долларов');
+for (let key in obj) {
+    console.log(`${key}-зарплата ${obj[key]} долларов`);
+  }
+
+let n = 1000;
+let num = 0
+while (n > 50) {
+    n /= 2; 
+    num += 1;
 }
+
+console.log(n);
+console.log(num);
 
 i = prompt("дата первой пятницы в неделе")
 
 while (i < 32){
-    console.log("Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.");
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
     i+=7;
 }

@@ -70,13 +70,10 @@ footer{
     padding-bottom: 128px;
     background: #000915;
 }
-.footer_link{
-    width: 379px;
-    height: 300px;
-}
+
 .games{
     position: relative;
-    width: 379px;
+    width: 378px;
     height: 300px;
     background-repeat: no-repeat;
     line-height: 100px;
@@ -111,7 +108,7 @@ footer{
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .glow-on-hover:before {
@@ -160,3 +157,26 @@ footer{
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+
+@media (max-width: 378px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    h1{
+        height: 77px;
+        font-size: 32px;
+        width: 343px;
+        text-align: center;
+    }
+    .games{
+        width: 340px;
+    }
+    .discription{
+        text-align: center;
+        width: 343px;
+    }
+    .glow-on-hover{
+        margin-left: 58px;
+    }
+}
