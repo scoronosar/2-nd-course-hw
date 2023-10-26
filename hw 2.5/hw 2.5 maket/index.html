@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="center">
+        <h1>
+            Добро пожаловать на мой сайт !
+        </h1>
+        <p class="discription">
+            Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a href="#" class="disc_link">поехали</a> и <a href="#" class="disc_link">приступай</a>
+        </p>
+        <button class="glow-on-hover">Поехали!</button>
+    </header>
+    <section class="game_section center">
+        <a class="game_link">
+            <div class="games game1">
+                <span class="text">Игра 1</span>
+            </div>
+        </a>
+        <a class="game_link">
+            <div class="games game2">
+                <span class="text">Игра 2</span>
+            </div>
+        </a>
+        <a class="game_link">
+            <div class="games game3">
+                <span class="text">Игра 3</span>
+            </div>
+        </a>
+    </section>
+    <section class="game_season center">
+        <div class="game_season_text">
+            <p class="game_season_name">Времена года!</p>
+            <p class="game_season_adv">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <a href="#"><button onclick="season()" class="glow-on-hover game_season_button" type="button">Играть!</button></a>
+        </div>
+        <div class="game_season_pic">
+            <a href="#"><img class="game_picture" src="./undraw_video_game_night_8h8m 1.svg" alt="Картинка игры"></a>
+        </div>
+    </section>
+    <script src="./game-seasons.js"></script>
+</body>
+</html>
