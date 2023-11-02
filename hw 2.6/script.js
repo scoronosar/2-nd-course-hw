@@ -75,11 +75,52 @@ console.log(abc.join(''));
 /* 9 */
 
 const massiv = [[1, 2, 3],[4, 5, 6]];
-massiv1 = []
+massiv1 = [];
 
 for (let i = 0; i <= massiv.length ; i++){
     for (let j = 0; j <= massiv[i].length; j++){
-        massiv1.push(massiv[i][j])
+        massiv1.push(massiv[i][j]);
     }
 }
-console.log(massiv1)
+console.log(massiv1);
+
+/* 10 */
+
+massive = [3, 1, 8, 7, 4];
+result = massive[0];
+
+for (let i = 1; i < massive.length; i+1); {
+    result += arr[i];
+    console.log(result);
+    result = arr[i];
+}
+
+/* 11 */
+
+const massivee = [1, 4, 9, 16];
+
+const map1 = (massivee) => {
+    return massivee.map(x => x ** 2)
+}
+console.log(number(massivee))
+
+/* 12 */
+
+const massivString = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+
+function getWordLengths(massivString) {
+
+    return massivString.map(word => word.length);
+
+}
+
+/* 13 */
+
+function filterPositive(array) {
+
+    return array.filter(number => number < 0)
+
+}
+
+filterPositive([-1, 0, 5, -10, 56]);
+filterPositive([-25, 25, 0, -1000, -2]);
