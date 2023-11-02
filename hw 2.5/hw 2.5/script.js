@@ -51,7 +51,7 @@ function age(a){
 age(prompt("How old are you?"));
 
 function nan(a , b){
-    if (Number.isNaN(a) == true  && Number.isNaN(b) == true){
+    if (!isNaN(a) && !isNaN(b)){
         return (a*b);
     }
     else{
@@ -62,7 +62,7 @@ function nan(a , b){
 nan(prompt() , prompt());
 
 function nan(a){
-    if (Number.isNaN(a) == true && Number.isNaN(b) == true){
+    if (!isNaN(a)){
         return (`n в кубе равняется ${a*a*a}`);
     }
     else{
@@ -72,24 +72,29 @@ function nan(a){
 
 nan(prompt());
 
-let radius = 3;
-
-var cyrcle1 = {
-    getArea: function(radius) {
-        return(2*3.14*radius);
-    },
-    getPerimeter: function(radius) {
-        return(2*3.14*radius);
-    }
+function getArea() {
+    return(this.radius * this.radius * Math.PI);
 }
 
-radius = 5;
 
-var cyrcle2 = {
-    getArea: function(radius) {
-        return(2*3.14*radius);
-    },
-    getPerimeter: function(radius) {
-        return(2*3.14*radius);
-    }
+function getPerimeter() {
+    return(2 * Math.PI * this.radius);
 }
+const circle1 = {
+  radius: 3,
+  getArea,
+  getPerimeter,
+};
+
+const circle2 = {
+  radius: 5,
+  getArea,
+  getPerimeter,
+};
+
+
+console.log(circle1.getArea())
+console.log(circle1.getPerimeter())
+
+console.log(circle2.getArea())
+console.log(circle2.getPerimeter())
