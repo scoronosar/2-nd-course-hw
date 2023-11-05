@@ -65,7 +65,7 @@ if (arr.includes(Number(prompt(`Угадай число`)))) {
 let a = 'abcdef';
 abc = [];
 
-for (let i = 0; i <= a.length ; i++ ){
+for (let i = 0; i < a.length ; i++ ){
     abc.push(a[i]);
 }
 
@@ -75,13 +75,9 @@ console.log(abc.join(''));
 /* 9 */
 
 const massiv = [[1, 2, 3],[4, 5, 6]];
-massiv1 = [];
 
-for (let i = 0; i <= massiv.length ; i++){
-    for (let j = 0; j <= massiv[i].length; j++){
-        massiv1.push(massiv[i][j]);
-    }
-}
+const massiv1 = [].concat(...massiv);
+
 console.log(massiv1);
 
 /* 10 */
@@ -89,10 +85,10 @@ console.log(massiv1);
 massive = [3, 1, 8, 7, 4];
 result = massive[0];
 
-for (let i = 1; i < massive.length; i+1); {
-    result += arr[i];
+for (let i = 1; i < massive.length; i++) {
+    result += massive[i];
     console.log(result);
-    result = arr[i];
+    result = massiv[i];
 }
 
 /* 11 */
@@ -102,7 +98,7 @@ const massivee = [1, 4, 9, 16];
 const map1 = (massivee) => {
     return massivee.map(x => x ** 2)
 }
-console.log(number(massivee))
+console.log(map1(massivee))
 
 /* 12 */
 
